@@ -12,27 +12,33 @@ font-family: 'Irish Grover', system-ui;}
 
 /*header*/
 
-
-nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+header{
     background-image: url(../assets/img/header.jpg);
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
 }
 
-nav .logo{
+header .logo{
     padding: 1%;
+}
+
+
+.material-icons{
+    font-size: 3rem;
+    color: #37587E;
+}
+
+nav{
+    width: 100%;
 }
 
 nav div ul{
     display: flex;
     list-style: none;
-    gap: 32px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 nav div ul li a{
@@ -44,40 +50,70 @@ nav div ul li a{
 }
 
 nav #toggle, nav label{
+    display: flex;
     display: none;
 }
 
-header h1{
+.hero{
+    background-image: url(../assets/img/index-portada-recortada.jpg);
+    width: 100%;
+    height: 784px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.hero h1{
+    padding: 2%;
     display: flex;
-    justify-content: center;
     color:#37587E;
     font-size: 3rem;
     text-shadow: 1px 1px 4px whitesmoke;
-    background-image: url(../assets/img/index-portada-recortada.jpg);
-    height: 49rem;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position:center;
 }
 
 
 /*main del sitio*/
 
 
-main h1{
-    color:#37587E;
-    text-align: center;
-    padding: 3rem 0% 3rem 0%;
-    font-size: 3rem;
-    text-shadow: 1px 1px 4px whitesmoke;
+.main-container{
+    margin: 3% 0;
+    padding: 3%;
+    background-color:#a8dff9;
+    display: flex;
+    justify-content: space-around;
 }
 
+.image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.image-container img{
+    width: 300px;
+    border-radius: 2%;
+    border: 1px solid #ECB159;
+}
+
+.text-container{
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-container h2{
+    color: #37587E;
+}
+
+.text-container p{
+    font-weight: bold;
+}
 /*main del index*/
 
 
-main{
-    margin-bottom: 3%;
+.mainIndex{
+    margin: 3% 0%;
     padding: 4rem;
     background-color: #a8dff9;
 }
@@ -152,6 +188,7 @@ main{
 
 
 .cuerpoTablas{
+    margin-bottom: 3%;
     width: 100%;
     background-color: #a8dff9;
 }
@@ -174,8 +211,8 @@ main{
 }
 
 .fotos img{
-    border: 5px solid #ECB159;
-    border-radius: 10%;
+    border: 1px solid #ECB159;
+    border-radius: 2%;
 }
 
 .fotos .div{
@@ -196,6 +233,7 @@ main{
 
 
 .cuerpoGaleria{
+    margin-bottom: 3%;
     background-color: #a8dff9;
 }
 
@@ -209,7 +247,7 @@ main{
 }
 
 .gridContainer img{
-    border-radius: 10%;
+    border-radius: 2%;
     border: 1px solid #ECB159;
 
 }
@@ -219,6 +257,7 @@ main{
 
 
 .cuerpoNosotros{
+    margin-bottom: 3%;
     background-color: #a8dff9;
 }
 
@@ -260,7 +299,7 @@ main{
 
 
 .cuerpoContacto{
-    margin: 0%;
+    margin-bottom: 3%;
     width: 100%;
     height: 85.75rem;
     background-image: url(../assets/img/contacto-fondo.jpg);
@@ -324,7 +363,7 @@ footer{
     margin: 0%;
     padding: 8px;
     width: 100%;
-    height: 7rem;
+    height: 6rem;
     background-color: #ECB159;
     display: flex;
     justify-content: space-evenly;
@@ -337,8 +376,8 @@ footer p{
 }
 
 footer a img{
-    height: 30px;
     margin: 0 5px;
+    width: 30px;
 }
 
 
@@ -348,104 +387,124 @@ footer a img{
 /* TABLET */
 
 
-@media (max-width:930px){
-    nav div ul li a{
-        font-size: 2rem;
-    }
-    header h1{
-        height: 30rem;
-    }
-    .gridMain{
-        grid-template-columns: 220px repeat(2, 120px);
-    }
-    
-    .main-2 h2 {
-        font-size: 1.2rem;
-    }
-    
-    .main-2 p{
-        font-size: .8rem;
-    }
-    
-    .gridMain p{
-        font-size: .8rem;
-    }
-}
-
 @media (max-width:768px){
-    nav ul li a{
-        color:#37587E;
+    header .logo{
+        align-self: flex-start;
     }
     nav .menu{
         width: 100%;
         height: 0;
         overflow: hidden;
     }
-
     nav ul{
         flex-direction: column;
         align-items: center;
         padding: 8px;
     }
-
     nav label{
-        display: inline-flex;
+        padding: 1%;
+        display: flex;
+        justify-content: end;
         cursor: pointer;
     }
-
     nav #toggle:checked ~ .menu{
         height: 100%;
     }
-}
-
-@media (max-width:688px){
-    .gridMain{
-        grid-template-columns: 150px repeat(2, 80px);
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-areas:
-        "main-1 main-3 main-3"
-        "main-1 main-3 main-3"
-        "main-1 main-4 main-4"
-        "main-2 . ."
-        ;
-        justify-content: space-around;
+    .hero{
+        height: 453px;
     }
-    .main-1{
-        height: 80%;
+    .hero h1{
+        padding: 1%;
+        font-size: 2.5rem;
     }
-    .main-3{
-        height: 60%;
-        align-self:end;
+    .image-container img{
+        width: 250px;
     }
-    .main-2 h2 {
-        padding:0%;
-        font-size: 1rem;
+    .text-container h2{
+        font-size: 1.3rem;
     }
     
-    .main-2 p{
-        font-size: .8rem;
-    }
-    
-    .gridMain p{
-        font-size: .8rem;
+    .text-container p{
+        font-size: 0.8rem;
     }
     footer{
         height: 5rem;
     }
-    
     footer p{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
     
     footer a img{
-        height: 20px;
+        width: 25px;
     }
 }
-
 
 /* MOBILE */
 
 
 @media (max-width:576px){
+    header .logo img{
+        width: 50px;
+    }
+    .material-icons{
+        font-size: 2.3rem;
+    }
+    .hero{
+        height: 350px;
+    }
+    .hero h1{
+        padding: 1%;
+        font-size: 2rem;
+    }
+    .main-container{
+        flex-direction: column;
+    }
+    .image-container{
+        padding: 3%;
+    }
+    footer{
+        height: 4rem;
+    }
+    footer p{
+        font-size: 1.2rem;
+    }
     
+    footer a img{
+        width: 20px;
+    }
+}
+
+@media (max-width:320px){
+    header .logo img{
+        width: 30px;
+    }
+    .material-icons{
+        font-size: 1.5rem;
+    }
+    .hero{
+        height: 200px;
+    }
+    .hero h1{
+        padding: 1%;
+        font-size: 1.5rem;
+    }
+    .image-container img{
+        width: 200px;
+    }
+    .text-container h2{
+        font-size: 1rem;
+    }
+    .text-container p{
+        font-size: 0.5rem;
+    }
+    footer{
+        height: 3rem;
+    }
+    footer p{
+        font-size: 1rem;
+    }
+    
+    footer a img{
+        width: 15px;
+    }
 }
