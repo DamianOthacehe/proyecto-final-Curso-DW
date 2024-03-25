@@ -262,7 +262,6 @@ nav #toggle, nav label{
 
 .cuerpo-contacto{
     margin-bottom: 3%;
-    height: 100vh;
     background-image: url(../assets/img/contacto-fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -781,6 +780,10 @@ form fieldset{
 }
 
 /* contacto */
+
+.cuerpo-contacto{
+    height: 82.7vh;
+}
 
 .cuerpo-contacto h1{
     font-size: 1.5rem;
