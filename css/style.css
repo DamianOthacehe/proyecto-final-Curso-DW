@@ -13,7 +13,7 @@ font-family: 'Irish Grover', system-ui;}
 /*header*/
 
 header{
-    background-image: url(../assets/img/header.jpg);
+    background-color:#37587E;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,10 +25,13 @@ header .logo{
     padding: 1%;
 }
 
+header .logo img{
+    width: 70px;
+}
 
 .material-icons{
     font-size: 3rem;
-    color: #37587E;
+    color:#a8dff9;
 }
 
 nav{
@@ -41,12 +44,15 @@ nav div ul{
     justify-content: space-around;
 }
 
+nav div ul li :hover{
+    color:#ECB159
+}
+
 nav div ul li a{
     padding: 1rem;
     text-decoration: none;
     font-size: 2.3rem;
-    color:#37587E;
-    text-shadow: 1px 1px 4px whitesmoke;
+    color:#a8dff9;
 }
 
 nav #toggle, nav label{
@@ -54,20 +60,19 @@ nav #toggle, nav label{
     display: none;
 }
 
-.hero{
-    background-image: url(../assets/img/index-portada-recortada.jpg);
-    width: 100%;
-    height: 784px;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position:center;
+.carousel-caption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* text-align: center; */
 }
 
-.hero h1{
+.carousel-caption h1{
     padding: 2%;
     display: flex;
     color:#37587E;
-    font-size: 3rem;
+    font-size: 4.5rem;
     text-shadow: 1px 1px 4px whitesmoke;
 }
 
@@ -161,7 +166,6 @@ nav #toggle, nav label{
 }
 
 .fotos div p{
-    padding: 0% 5rem 3rem;
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
@@ -191,14 +195,14 @@ nav #toggle, nav label{
     row-gap: 50px;
     justify-items: center;
 }
-
 .grid-container img{
     width: 250px;
     border-radius: 2%;
     border: 1px solid #ECB159;
-
 }
-
+.grid-container img:hover{
+    width: 300px;
+}
 
 /*main de nosotros*/
 
@@ -242,13 +246,13 @@ nav #toggle, nav label{
 }
 
 .nosotros div h2 {
-    padding: 1rem;
+    padding-top: 1rem;
     font-size: 2.5rem;
     color:#37587E;
 }
 
 .nosotros div p {
-    padding:1rem 0 3rem 0;
+    padding-bottom: 3%;
     font-size: 1rem;
     font-weight: bold;
 }
@@ -258,6 +262,7 @@ nav #toggle, nav label{
 
 .cuerpo-contacto{
     margin-bottom: 3%;
+    height: 100vh;
     background-image: url(../assets/img/contacto-fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -346,6 +351,7 @@ footer{
 footer p{
     margin: 0%;
     font-size: 1.7rem;
+    color: black;
 }
 
 footer a img{
@@ -360,6 +366,44 @@ footer a img{
 /* TABLET */
 
 
+@media (max-width:1023px){
+
+/* galeria */
+
+    .grid-container{
+        row-gap: 30px;
+    }
+    .grid-container img{
+        width: 200px;
+    }
+
+/* contacto */
+
+form fieldset{
+    width: 50%;
+}
+}
+
+
+@media (max-width:900px){
+
+/* galeria */
+
+    .grid-container{
+        row-gap: 20px;
+    }
+    .grid-container img{
+        width: 180px;
+    }
+
+/* contacto */
+
+form fieldset{
+    width: 60%;
+}
+}
+
+
 @media (max-width:768px){
 
 
@@ -368,6 +412,9 @@ footer a img{
     header .logo{
         align-self: flex-start;
     }
+    header .logo img{
+        width: 50px;
+    }
     nav .menu{
         width: 100%;
         height: 0;
@@ -375,7 +422,7 @@ footer a img{
     }
     nav ul{
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
         padding: 8px;
     }
     nav label{
@@ -391,12 +438,9 @@ footer a img{
 
 /* index */
 
-    .hero{
-        height: 453px;
-    }
-    .hero h1{
+    .carousel-caption h1{
         padding: 1%;
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
     .image-container img{
         width: 250px;
@@ -404,7 +448,6 @@ footer a img{
     .text-container h2{
         font-size: 1.3rem;
     }
-    
     .text-container p{
         font-size: 0.8rem;
     }
@@ -413,25 +456,21 @@ footer a img{
 /* tablas */
 
 .cuerpoTablas h1{
-    padding: 1%;
-    font-size: 2.5rem;
-}
-
-.cuerpoTablas p{
-    font-size: 1.2rem;
-}
-
-.fotos div img{
-width: 200px;
-}
-
-.fotos div h2{
-    font-size: 2rem;
-}
-
-.fotos div p{
-    font-size: 1rem;
-}
+        padding: 1%;
+        font-size: 2.5rem;
+    }
+    .cuerpoTablas p{
+        font-size: 1.2rem;
+    }
+    .fotos div img{
+        width: 150px;
+    }
+    .fotos div h2{
+        font-size: 2rem;
+    }
+    .fotos div p{
+        font-size: 1rem;
+    }
 
 /* galeria */
 
@@ -469,10 +508,10 @@ width: 200px;
 
 /* contacto */
 
-.cuerpo-contacto h1{
-    padding: 1%;
-    font-size: 2.5rem;
-}
+    .cuerpo-contacto h1{
+        padding: 1%;
+        font-size: 2.5rem;
+    }
 
 form fieldset{
     width: 65%;
@@ -487,10 +526,34 @@ form fieldset{
     footer p{
         font-size: 1.5rem;
     }
-    
     footer a img{
         width: 25px;
     }
+}
+
+
+@media (max-width:675px){
+
+/* galeria */
+
+    .galeria h1{
+        font-size: 2rem;
+    }
+        .grid-container{
+        padding: 3%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        row-gap: 32px;
+    }
+    .grid-container img{
+        width: 180px;
+    }
+
+/* contacto */
+
+form fieldset{
+    width: 75%;
+}
 }
 
 
@@ -503,7 +566,7 @@ form fieldset{
 /* header */
 
     header .logo img{
-        width: 50px;
+        width: 40px;
     }
     .material-icons{
         font-size: 2.3rem;
@@ -512,11 +575,9 @@ form fieldset{
 
 /* index */
 
-    .hero{
-        height: 350px;
-    }
-    .hero h1{
-        font-size: 2rem;
+    .carousel-caption h1{
+        padding-left: 1%;
+        font-size: 2.2rem;
     }
     .main-container{
         flex-direction: column;
@@ -528,49 +589,27 @@ form fieldset{
 
 /* tablas */
 
-.cuerpoTablas h1{
-    font-size: 2rem;
-}
-
-.cuerpoTablas p{
-    font-size: 1.2rem;
-}
-
-.fotos{
-    flex-direction: column;
-    align-items: center;
-}
-
-.fotos div{
-    width: 230px;
-}
-
-.fotos div img{
-    width: 230px;
-}
-
-.fotos div h2{
-    font-size: 1.5rem;
-}
-
-.fotos div p{
+    .cuerpoTablas h1{
+        font-size: 2rem;
+    }
+    .cuerpoTablas p{
+        font-size: 1.2rem;
+    }
+    .fotos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .fotos div{
+        width: 230px;
+    }
+    .fotos div img{
+        width: 230px;
+    }
+    .fotos div h2{
+        font-size: 1.5rem;
+    }
+    .fotos div p{
     font-size: 0.8rem;
-}
-
-
-/* galeria */
-
-.galeria h1{
-    font-size: 2rem;
-    }
-    .grid-container{
-    padding: 3%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    row-gap: 32px;
-    }
-    .grid-container img{
-        width: 180px;
     }
 
 
@@ -607,7 +646,7 @@ form fieldset{
 }
 
 form fieldset{
-    width: 65%;
+    width: 75%;
 }
 
 form fieldset div{
@@ -650,6 +689,25 @@ textarea{
 }
 
 
+@media(max-width:425px){
+
+/* galeria */
+
+.galeria h1{
+    font-size: 1.5rem;
+}
+.grid-container{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    }
+
+/* contacto */
+
+form fieldset{
+    width: 85%;
+}
+}
+
 
 @media (max-width:320px){
 
@@ -666,10 +724,7 @@ textarea{
 
 /* index */
 
-    .hero{
-        height: 200px;
-    }
-    .hero h1{
+    .carousel-caption h1{
         font-size: 1.5rem;
     }
     .image-container img{
@@ -708,16 +763,6 @@ textarea{
 .fotos div p{
     font-size: 0.8rem;
 }
-
-/* galeria */
-
-.galeria h1{
-    font-size: 1.5rem;
-}
-.grid-container{
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    }
 
 
 /* nosotros */
