@@ -7,7 +7,7 @@
 }
 
 body{
-font-family: 'Irish Grover', system-ui;}
+    font-family: 'Irish Grover', system-ui;}
 
 
 /*header*/
@@ -26,7 +26,7 @@ header .logo{
 }
 
 header .logo img{
-    width: 70px;
+    width: 65px;
 }
 
 .material-icons{
@@ -39,6 +39,7 @@ nav{
 }
 
 nav div ul{
+    margin: 0;
     display: flex;
     list-style: none;
     justify-content: space-around;
@@ -369,12 +370,12 @@ footer a img{
 
 /* galeria */
 
-    .grid-container{
-        row-gap: 30px;
-    }
-    .grid-container img{
-        width: 200px;
-    }
+.grid-container{
+    row-gap: 30px;
+}
+.grid-container img{
+    width: 200px;
+}
 
 /* contacto */
 
@@ -388,12 +389,12 @@ form fieldset{
 
 /* galeria */
 
-    .grid-container{
-        row-gap: 20px;
-    }
-    .grid-container img{
-        width: 180px;
-    }
+.grid-container{
+    row-gap: 20px;
+}
+.grid-container img{
+    width: 180px;
+}
 
 /* contacto */
 
@@ -423,6 +424,9 @@ form fieldset{
         flex-direction: column;
         align-items: flex-end;
         padding: 8px;
+    }
+    nav div ul li a{
+        font-size: 2rem;
     }
     nav label{
         padding: 1%;
@@ -569,6 +573,9 @@ form fieldset{
     }
     .material-icons{
         font-size: 2.3rem;
+    }
+    nav div ul li a{
+        font-size: 1.5rem;
     }
 
 
@@ -718,6 +725,9 @@ form fieldset{
     }
     .material-icons{
         font-size: 1.5rem;
+    }
+    nav div ul li a{
+        font-size: 1.2rem;
     }
 
 
