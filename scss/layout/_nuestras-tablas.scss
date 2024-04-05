@@ -1,0 +1,42 @@
+/*main de nuestras tablas*/
+
+
+.cuerpoTablas {
+    margin-bottom: 3%;
+    width: 100%;
+    background-color: map-get($colors, bg-main);
+    h1{
+      @include h1(3rem);
+    }
+    p{
+      padding: 0 15% 3%;
+      display: flex;
+      justify-content: center;
+      font-size: map-get($fonts, p);
+      text-align: center;
+    }
+  }
+  
+  .fotos {
+    padding: 0 3%;
+    display: flex;
+    justify-content: center; 
+    div{
+      @include flex( column, none, center);
+      img{
+        border: $border;
+        border-radius: $b-rad;
+      }
+      h2{
+        padding: 1rem;
+        text-align: center;
+        font-size: map-get($fonts, h2);
+        color: map-get($colors, font-h-main);
+      }
+      p{
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }

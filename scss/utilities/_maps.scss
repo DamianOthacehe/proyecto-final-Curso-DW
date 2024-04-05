@@ -1,0 +1,26 @@
+$colors:(
+    bg-header:#37587E,
+    bg-main:#a8dff9,
+    bg-footer:#ECB159,
+    font-h-header:#a8dff9,
+    font-h-main:#37587E,
+    font-h-footer:black,
+    hover: #ECB159,
+);
+
+$fonts:(
+    navbar:2.3rem,
+    h1-index:4rem,
+    h1:3rem,
+    h2:2.5rem,
+    footer:1.7rem,
+    p:1.5rem,
+);
+
+$breakpoints:(
+    xs: 320px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+);

@@ -1,0 +1,30 @@
+/*main del index*/
+
+
+.main-container {
+    margin: 3% 0;
+    padding: 3%;
+    background-color: map-get($colors, bg-main);
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .image-container {
+    @include flex(column, none, center);
+    img {
+      width: 300px;
+      border-radius: $b-rad;
+      border: $border;
+    }
+  }
+  
+  .text-container {
+    @extend .image-container;
+    padding-top: 3%;
+    h2{
+      color: map-get($colors, font-h-main);
+    }
+    p{
+      font-weight: bold;
+    }
+  }

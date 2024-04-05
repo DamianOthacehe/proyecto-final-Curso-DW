@@ -1,0 +1,65 @@
+/*main de contacto*/
+
+
+.cuerpo-contacto {
+    margin-bottom: 3%;
+    background-image: url(../assets/img/contacto-fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  
+  .cuerpo-contacto h1 {
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    color: #37587E;
+    font-size: 3rem;
+    text-shadow: 1px 1px 4px whitesmoke; }
+
+
+
+/*formulario*/
+
+
+form {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3%; }
+
+form fieldset {
+  width: 40%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.308);
+  border: none; }
+
+form fieldset div {
+  padding: 2%;
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 1px 1px 4px black; }
+
+label {
+  display: flex; }
+
+input {
+  width: 400px;
+  height: 32px; }
+
+select {
+  width: 400px;
+  height: 32px; }
+
+textarea {
+  width: 400px;
+  height: 160px; }
+
+.submit {
+  width: 400px;
+  height: 32px;
+  background-color: #a8dff9;
+  border: #a8dff9;
+  font-family: 'Irish Grover', system-ui;
+  font-size: 1.5rem; }
