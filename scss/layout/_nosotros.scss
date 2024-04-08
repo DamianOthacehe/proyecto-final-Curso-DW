@@ -2,37 +2,37 @@
 
 
 .cuerpo-nosotros {
-    margin-bottom: 3%;
-    background-color: $bg-main;
-    h1{
-      @include h1(3rem);
-    }
-    p{
-      padding: 0 15% 3%;
-      display: flex;
-      justify-content: center;
-      font-size: $p;
-      text-align: center;
-    }
+  margin-bottom: 3%;
+  background-color: $bg-main;
+  h1{
+    @include h1(center, 3rem);
   }
-  .nosotros {
+  p{
+    padding: 0 15% 3%;
     display: flex;
-    justify-content: space-evenly;
-    div {
-      @include flex(column, none, center);
-      img {
-        border-radius: $b-rad;
-        border: $border; 
-      }
-      h2 {
-        padding-top: 1rem;
-        font-size: $h2;
-        color: $font-h-main;
-      }
-      p {
-        padding-bottom: 3%;
-        font-size: 1rem;
-        font-weight: bold;
-      }
+    justify-content: center;
+    font-size: $p;
+    text-align: center;
+  }
+}
+.nosotros {
+  display: flex;
+  justify-content: space-evenly;
+  div {
+    @include flex(column, none, center);
+    img {
+      border-radius: $b-rad;
+      border: $border; 
+    }
+    h2 {
+      padding-top: 1rem;
+      font-size: $h2;
+      color: $font-h-main;
+    }
+    p {
+      padding-bottom: 3%;
+      font-size: 1rem;
+      font-weight: bold;
     }
   }
+}

@@ -14,10 +14,10 @@
     grid-template-areas: $area;
 }
 
-@mixin h1($font){
+@mixin h1($justify, $font){
     padding: 2%;
     display: flex;
-    justify-content: center;
+    justify-content: $justify;
     font-size: $font;
     color: #37587E;
     text-shadow: 1px 1px 4px whitesmoke;

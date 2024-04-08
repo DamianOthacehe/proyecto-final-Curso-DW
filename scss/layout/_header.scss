@@ -1,30 +1,30 @@
 
 header{
-  background-color: map-get($colors, bg-header);
+  background-color: $bg-header;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   nav{
-      width: 100%;
-      div ul{
-          margin: 0;
-          display: flex;
-          list-style: none;
-          justify-content: space-around;
-              a{
-                  padding: 1rem;
-                  text-decoration: none;
-                  font-size: map-get($fonts, navbar);
-                  color: map-get($colors, font-h-header);
-                  &:hover{
-                      color: map-get($colors, hover);
-                  }
-              }
-          }
+    width: 100%;
+    div ul{
+      margin: 0;
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+      a{
+        padding: 1rem;
+        text-decoration: none;
+        font-size: $navbar;
+        color: $font-h-header;
+        &:hover{
+          color: $hover;
+        }
       }
+    }
   }
+}
 
 .logo{
   padding: 1%;
@@ -34,8 +34,8 @@ header{
 }
 
 .material-icons {
-  font-size: map-get($fonts, h1);
-  color: map-get($colors, font-h-header);
+  font-size: $h1;
+  color: $font-h-header;
 }
 
 nav #toggle, nav label {

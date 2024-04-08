@@ -2,22 +2,22 @@
 
 
 .galeria {
-    margin-bottom: 3%;
-    padding: 0 3% 3% 3%;
-    background-color: $bg-main;
-    h1 {
-    @include h1(3rem);
+  margin-bottom: 3%;
+  padding: 0 3% 3% 3%;
+  background-color: $bg-main;
+  h1 {
+    @include h1(center, 3rem);
   }
 }
-  .grid-container {
-    @include grid (repeat(4, 1fr), repeat(3, 1fr), center, none, none);
-    row-gap: 50px;
-    img{
-      width: 250px;
-      border: $border;
-      border-radius: $b-rad;
-      &:hover{
-        transform: scale(1.6);
-      }
+.grid-container {
+  @include grid (repeat(4, 1fr), repeat(3, 1fr), center, none, none);
+  row-gap: 50px;
+  img{
+    width: 250px;
+    border: $border;
+    border-radius: $b-rad;
+    &:hover{
+      transform: scale(1.6);
     }
   }
+}

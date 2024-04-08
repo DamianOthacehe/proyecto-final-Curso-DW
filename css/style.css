@@ -43,6 +43,19 @@ nav #toggle, nav label {
   display: none; }
 
 /*main del index*/
+.carousel-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; }
+  .carousel-caption h1 {
+    padding: 2%;
+    display: flex;
+    justify-content: none;
+    font-size: 4.5rem;
+    color: #37587E;
+    text-shadow: 1px 1px 4px whitesmoke; }
+
 .main-container {
   margin: 3% 0;
   padding: 3%;
@@ -174,6 +187,59 @@ nav #toggle, nav label {
       font-size: 1rem;
       font-weight: bold; }
 
+/*main de contacto*/
+.cuerpo-contacto {
+  margin-bottom: 3%;
+  background-image: url(../assets/img/contacto-fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .cuerpo-contacto h1 {
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: #37587E;
+    text-shadow: 1px 1px 4px whitesmoke; }
+
+/*formulario*/
+form {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3%; }
+  form fieldset {
+    width: 40%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.308);
+    border: none; }
+    form fieldset div {
+      padding: 2%;
+      font-size: 1.5rem;
+      color: white;
+      text-shadow: 1px 1px 4px black; }
+      form fieldset div label {
+        display: flex; }
+      form fieldset div input {
+        width: 400px;
+        height: 32px; }
+      form fieldset div select {
+        width: 400px;
+        height: 32px; }
+      form fieldset div textarea {
+        width: 400px;
+        height: 160px; }
+      form fieldset div .submit {
+        width: 400px;
+        height: 32px;
+        background-color: #a8dff9;
+        border: #a8dff9;
+        font-family: 'Irish Grover', system-ui;
+        font-size: 1.5rem; }
+
 /*footer*/
 footer {
   margin: 0%;
@@ -183,9 +249,6 @@ footer {
   background-color: #ECB159;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  display: flex;
   justify-content: space-evenly;
   align-items: center; }
 
@@ -198,14 +261,281 @@ footer a img {
   margin: 0 5px;
   width: 30px; }
 
-.carousel-caption {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0; }
-  .carousel-caption h1 {
-    padding: 2%;
+/* MEDIA QUERIES */
+/* TABLET */
+@media (max-width: 1023px) {
+  /* galeria */
+  .grid-container {
+    row-gap: 30px; }
+    .grid-container img {
+      width: 200px; }
+  /* contacto */
+  form fieldset {
+    width: 50%; } }
+
+@media (max-width: 900px) {
+  /* galeria */
+  .grid-container {
+    row-gap: 20px; }
+    .grid-container img {
+      width: 180px; }
+  /* contacto */
+  form fieldset {
+    width: 60%; } }
+
+@media (max-width: 768px) {
+  /* header */
+  header .logo {
+    align-self: flex-start; }
+    header .logo img {
+      width: 50px; }
+  nav .menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden; }
+  nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 8px; }
+    nav ul li a {
+      font-size: 2rem; }
+  nav label {
+    padding: 1%;
     display: flex;
-    color: #37587E;
-    font-size: 4rem;
-    text-shadow: 1px 1px 4px whitesmoke; }
+    justify-content: end;
+    cursor: pointer; }
+  nav #toggle:checked ~ .menu {
+    height: 100%; }
+  /* index */
+  .carousel-caption h1 {
+    padding: 1%;
+    font-size: 3rem; }
+  .image-container img, .text-container img {
+    width: 250px; }
+  .text-container h2 {
+    font-size: 1.3rem; }
+  .text-container p {
+    font-size: 0.8rem; }
+  /* tablas */
+  .cuerpoTablas h1 {
+    padding: 1%;
+    font-size: 2.5rem; }
+  .cuerpoTablas p {
+    font-size: 1.2rem; }
+  .fotos div img {
+    width: 150px; }
+  .fotos div h2 {
+    font-size: 2rem; }
+  .fotos div p {
+    font-size: 1rem; }
+  /* galeria */
+  .galeria h1 {
+    padding: 1%;
+    font-size: 2.5rem; }
+  .grid-container img {
+    width: 150px; }
+  /* nosotros */
+  .cuerpo-nosotros div h1 {
+    padding: 1%;
+    font-size: 2.5rem; }
+  .cuerpo-nosotros div p {
+    font-size: 1.2rem; }
+  .nosotros div {
+    width: 220px; }
+    .nosotros div img {
+      width: 220px; }
+    .nosotros div h2 {
+      font-size: 1.3rem; }
+    .nosotros div p {
+      font-size: 1rem; }
+  /* contacto */
+  .cuerpo-contacto h1 {
+    padding: 1%;
+    font-size: 2.5rem; }
+  form fieldset {
+    width: 65%; }
+  /* footer */
+  footer {
+    height: 5rem; }
+    footer p {
+      font-size: 1.5rem; }
+    footer a img {
+      width: 25px; } }
+
+@media (max-width: 675px) {
+  /* galeria */
+  .galeria h1 {
+    font-size: 2rem; }
+  .grid-container {
+    padding: 3%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 32px; }
+    .grid-container img {
+      width: 180px; }
+  /* contacto */
+  form fieldset {
+    width: 75%; } }
+
+@media (max-width: 576px) {
+  /* header */
+  header .logo img {
+    width: 40px; }
+  .material-icons {
+    font-size: 2.3rem; }
+  nav div ul li a {
+    font-size: 1.5rem; }
+  /* index */
+  .carousel-caption h1 {
+    padding-left: 1%;
+    font-size: 2.2rem; }
+  .main-container {
+    flex-direction: column; }
+  .image-container, .text-container {
+    padding: 3%; }
+  /* tablas */
+  .cuerpoTablas h1 {
+    font-size: 2rem; }
+  .cuerpoTablas p {
+    font-size: 1.2rem; }
+  .fotos {
+    flex-direction: column;
+    align-items: center; }
+    .fotos div {
+      width: 230px; }
+      .fotos div img {
+        width: 230px; }
+      .fotos div h2 {
+        font-size: 1.5rem; }
+      .fotos div p {
+        font-size: 0.8rem; }
+  /* nosotros */
+  .cuerpo-nosotros div h1 {
+    font-size: 2rem; }
+  .cuerpo-nosotros div p {
+    font-size: 1.2rem; }
+  .nosotros {
+    flex-direction: column;
+    align-items: center; }
+    .nosotros div {
+      width: 220px; }
+      .nosotros div img {
+        width: 220px; }
+      .nosotros div h2 {
+        font-size: 1.4rem; }
+      .nosotros div p {
+        font-size: 0.8rem; }
+  /* contacto */
+  .cuerpo-contacto h1 {
+    font-size: 2rem; }
+  form fieldset {
+    width: 75%; }
+    form fieldset div {
+      font-size: 1.3rem; }
+      form fieldset div input {
+        width: 300px;
+        height: 30px; }
+      form fieldset div select {
+        width: 300px;
+        height: 30px; }
+      form fieldset div textarea {
+        width: 300px;
+        height: 100px; }
+      form fieldset div .submit {
+        width: 300px;
+        height: 30px;
+        font-size: 1.3rem; }
+  /* footer */
+  footer {
+    height: 4rem; }
+    footer p {
+      font-size: 1.2rem; }
+    footer a img {
+      width: 20px; } }
+
+@media (max-width: 425px) {
+  /* galeria */
+  .galeria h1 {
+    font-size: 1.5rem; }
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 1fr); }
+  /* contacto */
+  form fieldset {
+    width: 85%; }
+  /* footer */
+  footer {
+    height: 3.5rem; }
+    footer p {
+      font-size: 1rem; }
+    footer a img {
+      width: 18px; } }
+
+@media (max-width: 320px) {
+  /* header */
+  header .logo img {
+    width: 30px; }
+  .material-icons {
+    font-size: 1.5rem; }
+  nav div ul li a {
+    font-size: 1.2rem; }
+  /* index */
+  .carousel-caption h1 {
+    font-size: 1.5rem; }
+  .image-container img, .text-container img {
+    width: 200px; }
+  .text-container h2 {
+    font-size: 1rem; }
+  .text-container p {
+    font-size: 0.5rem; }
+  /* tablas */
+  .cuerpoTablas h1 {
+    font-size: 1.5rem; }
+  .cuerpoTablas p {
+    font-size: 0.8rem; }
+  .fotos div {
+    width: 200px; }
+    .fotos div img {
+      width: 200px; }
+    .fotos div h2 {
+      font-size: 1.2rem; }
+    .fotos div p {
+      font-size: 0.8rem; }
+  /* nosotros */
+  .cuerpo-nosotros div h1 {
+    font-size: 1.5rem; }
+  .cuerpo-nosotros div p {
+    font-size: 0.8rem; }
+  .nosotros div h2 {
+    font-size: 1.2rem; }
+  .nosotros div p {
+    font-size: 0.8rem; }
+  /* contacto */
+  .cuerpo-contacto {
+    height: 82.7vh; }
+    .cuerpo-contacto h1 {
+      font-size: 1.5rem; }
+  form fieldset {
+    width: 75%; }
+    form fieldset div {
+      font-size: 1rem; }
+      form fieldset div input {
+        width: 200px;
+        height: 20px; }
+      form fieldset div select {
+        width: 200px;
+        height: 20px; }
+      form fieldset div textarea {
+        width: 200px;
+        height: 80px; }
+      form fieldset div .submit {
+        width: 200px;
+        height: 20px;
+        font-size: 1rem; }
+  /* footer */
+  footer {
+    height: 3rem; }
+    footer p {
+      font-size: 0.8rem; }
+    footer a img {
+      width: 15px; } }
