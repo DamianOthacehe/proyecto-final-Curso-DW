@@ -5,7 +5,6 @@
 
 
 @media (max-width: 1023px) {
-  /* galeria */
   .grid-container {
     row-gap: 30px;
     img {
@@ -32,7 +31,6 @@
     width: 60%;
   }
 }
-
 
 
 @media (max-width: 768px) {
@@ -89,8 +87,11 @@
     padding: 1%;
     font-size: 2.5rem;
     }
+    h2{
+      font-size: 1.5rem;
+    }
     p {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     }
   }
   .fotos div{
@@ -101,7 +102,7 @@
     font-size: 2rem;
     }
   p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     }
   }
   /* galeria */
@@ -119,7 +120,7 @@
     font-size: 2.5rem;
     }
     p {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     }
   }
   .nosotros div {
@@ -131,7 +132,7 @@
     font-size: 1.3rem;
     }
     p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     }
   }
   /* contacto */
@@ -145,7 +146,7 @@
   /* footer */
   footer {
     height: 5rem;
-    p {
+    h3 {
     font-size: 1.5rem;
     }
     a img {
@@ -157,6 +158,12 @@
 
 
 @media (max-width: 675px) {
+  /* tablas */
+  .cuerpoTablas{
+    h2{
+      font-size: 1.3rem;
+    }
+  }
   /* galeria */
   .galeria h1 {
     font-size: 2rem;
@@ -205,9 +212,6 @@
     h1{
     font-size: 2rem;
     }
-    p {
-    font-size: 1.2rem;
-    }
   }
   .fotos {
     flex-direction: column;
@@ -230,9 +234,6 @@
     h1 {
     font-size: 2rem;
     }
-    p {
-    font-size: 1.2rem;
-    }
   }
   .nosotros {
     flex-direction: column;
@@ -244,9 +245,6 @@
       }
       h2 {
         font-size: 1.4rem;
-      }
-      p {
-        font-size: 0.8rem;
       }
     }
   }
@@ -280,7 +278,7 @@
   /* footer */
   footer {
     height: 4rem;
-    p {
+    h3 {
     font-size: 1.2rem;
     }
     a img {
@@ -291,6 +289,18 @@
 
 
 @media (max-width: 425px) {
+  /* tablas */
+  .cuerpoTablas{
+    h1 {
+    padding: 1%;
+    font-size: 1.7rem;
+    }
+    h2{
+      font-size: 1.1rem;
+    }
+    p {
+    font-size: 0.7rem;
+    }}
   /* galeria */
   .galeria h1 {
     font-size: 1.5rem;
@@ -306,7 +316,7 @@
   /* footer */
   footer {
     height: 3.5rem;
-    p {
+    h3 {
     font-size: 1rem;
     }
     a img {
@@ -346,8 +356,11 @@
     h1{
     font-size: 1.5rem;
     }
+    h2{
+      font-size: 1rem;
+    }
     p {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     }
   }
   .fotos div {
@@ -356,10 +369,10 @@
     width: 200px;
     }
     h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     }
     p {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     }
   }
   /* nosotros */
@@ -412,7 +425,7 @@
   /* footer */
   footer {
     height: 3rem;
-    p {
+    h3 {
     font-size: 0.8rem;
     }
     a img {

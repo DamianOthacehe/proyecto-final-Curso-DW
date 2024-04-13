@@ -9,7 +9,7 @@ footer {
     @include flex(row, space-evenly, center);
   }
   
-  footer p {
+  footer h3 {
     margin: 0%;
     font-size: $footer;
     color: $font-h-footer;

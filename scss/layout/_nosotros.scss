@@ -8,9 +8,7 @@
     @include h1(center, 3rem);
   }
   p{
-    padding: 0 15% 3%;
-    display: flex;
-    justify-content: center;
+    padding: 0 12% 3%;
     font-size: $p;
     text-align: center;
   }
@@ -19,6 +17,7 @@
   display: flex;
   justify-content: space-evenly;
   div {
+    width: 400px;
     @include flex(column, none, center);
     img {
       border-radius: $b-rad;
@@ -30,9 +29,8 @@
       color: $font-h-main;
     }
     p {
-      padding-bottom: 3%;
-      font-size: 1rem;
-      font-weight: bold;
+      padding:0 0 3% 0;
+      font-size: $p;
     }
   }
 }

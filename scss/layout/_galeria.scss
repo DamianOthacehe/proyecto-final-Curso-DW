@@ -8,6 +8,11 @@
   h1 {
     @include h1(center, 3rem);
   }
+  p{
+    padding: 0 10% 3%;
+    font-size: $p;
+    text-align: center;
+  }
 }
 .grid-container {
   @include grid (repeat(4, 1fr), repeat(3, 1fr), center, none, none);
