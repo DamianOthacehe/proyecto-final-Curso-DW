@@ -3,7 +3,8 @@
 
 .cuerpo-nosotros {
   margin-bottom: 3%;
-  background-color: $bg-main;
+  // background-color: $bg-main;
+  background-image: linear-gradient(#37587E, #a8dff9, white);
   h1{
     @include h1(center, 3rem);
   }
@@ -11,6 +12,8 @@
     padding: 0 12% 3%;
     font-size: $p;
     text-align: center;
+    font-weight: 600;
+    text-shadow: 0 0 3px whitesmoke;
   }
 }
 .nosotros {

@@ -23,6 +23,7 @@
     border-radius: $b-rad;
     &:hover{
       transform: scale(1.6);
+      transition: transform 3000ms;
     }
   }
 }
