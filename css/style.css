@@ -74,7 +74,7 @@ nav #toggle, nav label {
   .image-container img, .text-container img {
     width: 300px;
     border-radius: 2%;
-    border: 1px solid #ECB159; }
+    box-shadow: 1px 1px 20px black; }
 
 .text-container {
   padding-top: 3%; }
@@ -101,26 +101,33 @@ nav #toggle, nav label {
     padding: 0 10%;
     font-size: 1rem; }
 
-.fotos {
-  padding: 3%;
+.cards {
+  padding: 5%;
   display: flex;
-  justify-content: center; }
-  .fotos div {
-    display: flex;
-    flex-direction: column;
-    justify-content: none;
-    align-items: center; }
-    .fotos div img {
-      border: 1px solid #ECB159;
-      border-radius: 2%; }
-    .fotos div h2 {
-      padding: 1rem;
-      text-align: center;
-      font-size: 2.5rem;
-      color: #37587E; }
-    .fotos div p {
-      font-size: 1rem;
-      text-align: center; }
+  justify-content: space-around; }
+
+.tablas {
+  width: 250px;
+  border-radius: 2%;
+  box-shadow: 1px 1px 20px black;
+  background-color: white;
+  overflow: hidden; }
+  .tablas img {
+    width: 100%;
+    object-fit: cover;
+    filter: sepia(); }
+    .tablas img:hover {
+      filter: none;
+      transition: 1500ms; }
+  .tablas h2 {
+    padding: 2%;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #37587E; }
+  .tablas p {
+    padding: 5%;
+    font-size: 1rem;
+    text-align: center; }
 
 /*main de galeria*/
 .galeria {
@@ -153,8 +160,8 @@ nav #toggle, nav label {
   grid-template-areas: none;
   row-gap: 50px; }
   .grid-container img {
-    width: 250px;
-    border: 1px solid #ECB159;
+    width: 240px;
+    border: 1px 1px 20px black;
     border-radius: 2%; }
     .grid-container img:hover {
       transform: scale(1.6);
@@ -187,7 +194,7 @@ nav #toggle, nav label {
     align-items: center; }
     .nosotros div img {
       border-radius: 2%;
-      border: 1px solid #ECB159; }
+      box-shadow: 1px 1px 20px black; }
     .nosotros div h2 {
       padding-top: 1rem;
       font-size: 2.5rem;
@@ -277,6 +284,8 @@ footer a img {
     row-gap: 30px; }
     .grid-container img {
       width: 200px; }
+  .cards {
+    justify-content: space-between; }
   /* contacto */
   form fieldset {
     width: 50%; } }
@@ -287,6 +296,8 @@ footer a img {
     row-gap: 20px; }
     .grid-container img {
       width: 180px; }
+  .tablas {
+    width: 210px; }
   /* contacto */
   form fieldset {
     width: 60%; } }
@@ -332,11 +343,11 @@ footer a img {
     font-size: 1.5rem; }
   .cuerpoTablas p {
     font-size: 0.8rem; }
-  .fotos div img {
-    width: 150px; }
-  .fotos div h2 {
+  .tablas {
+    width: 190px; }
+  h2 {
     font-size: 2rem; }
-  .fotos div p {
+  p {
     font-size: 0.8rem; }
   /* galeria */
   .galeria h1 {
@@ -376,6 +387,8 @@ footer a img {
   /* tablas */
   .cuerpoTablas h2 {
     font-size: 1.3rem; }
+  .tablas {
+    width: 165px; }
   /* galeria */
   .galeria h1 {
     font-size: 2rem; }
@@ -409,17 +422,16 @@ footer a img {
   /* tablas */
   .cuerpoTablas h1 {
     font-size: 2rem; }
-  .fotos {
+  .cards {
     flex-direction: column;
     align-items: center; }
-    .fotos div {
-      width: 230px; }
-      .fotos div img {
-        width: 230px; }
-      .fotos div h2 {
-        font-size: 1.5rem; }
-      .fotos div p {
-        font-size: 0.8rem; }
+  .tablas {
+    margin: 5%;
+    width: 220px; }
+    .tablas h2 {
+      font-size: 2rem; }
+    .tablas p {
+      font-size: 0.8rem; }
   /* nosotros */
   .cuerpo-nosotros div h1 {
     font-size: 2rem; }
@@ -469,6 +481,8 @@ footer a img {
     font-size: 1.1rem; }
   .cuerpoTablas p {
     font-size: 0.7rem; }
+  .tablas {
+    width: 190px; }
   /* galeria */
   .galeria h1 {
     font-size: 1.5rem; }

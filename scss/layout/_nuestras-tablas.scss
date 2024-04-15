@@ -17,25 +17,36 @@
   }
 }
 
-.fotos {
-  padding: 3%;
+.cards{
+  padding: 5%;
   display: flex;
-  justify-content: center; 
-  div{
-    @include flex( column, none, center);
-    img{
-      border: $border;
-      border-radius: $b-rad;
+  justify-content: space-around;
+}
+
+.tablas{
+  width: 250px;
+  border-radius: $b-rad;
+  box-shadow: 1px 1px 20px black;
+  background-color: white;
+  overflow: hidden;
+  img{
+    width: 100%;
+    object-fit: cover;
+    filter: sepia();
+    &:hover{
+      filter: none;
+      transition: 1500ms;
     }
-    h2{
-      padding: 1rem;
-      text-align: center;
-      font-size: $h2;
-      color: $font-h-main;
-    }
-    p{
-      font-size: $p;
-      text-align: center;
-    }
+  }
+  h2{
+    padding: 2%;
+    text-align: center;
+    font-size: $h2;
+    color: $font-h-main;
+  }
+  p{
+    padding:5%;
+    font-size: $p;
+    text-align: center;
   }
 }

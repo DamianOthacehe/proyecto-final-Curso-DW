@@ -22,7 +22,7 @@
   @include grid (repeat(4, 1fr), repeat(3, 1fr), center, none, none);
   row-gap: 50px;
   img{
-    width: 250px;
+    width: 240px;
     border: $border;
     border-radius: $b-rad;
     &:hover{

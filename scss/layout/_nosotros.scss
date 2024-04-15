@@ -21,7 +21,7 @@
     @include flex(column, none, center);
     img {
       border-radius: $b-rad;
-      border: $border; 
+      box-shadow: $border; 
     }
     h2 {
       padding-top: 1rem;
