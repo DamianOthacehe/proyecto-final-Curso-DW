@@ -188,6 +188,9 @@
     }
   }
   /* contacto */
+  .cuerpo-contacto {
+    height: 85vh;
+  }
   form fieldset {
     width: 75%;
   }
@@ -257,8 +260,11 @@
     }
   }
   /* contacto */
-  .cuerpo-contacto h1 {
-    font-size: 2rem;
+  .cuerpo-contacto{
+    height: 88vh;
+    h1 {
+      font-size: 2rem;
+    }
   }
   form fieldset {
     width: 75%;
@@ -405,11 +411,8 @@
     }
   }
   /* contacto */
-  .cuerpo-contacto {
-    height: 82.7vh;
-    h1 {
+  .cuerpo-contacto h1 {
     font-size: 1.5rem;
-    }
   }
   form fieldset {
     width: 75%;
