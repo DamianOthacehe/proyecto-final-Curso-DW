@@ -25,9 +25,9 @@
     width: 240px;
     border: $border;
     border-radius: $b-rad;
+    transition: transform 3000ms ease;
     &:hover{
-      transform: scale(1.6);
-      transition: transform 3000ms;
+      transform: scale(1.2);
     }
   }
 }

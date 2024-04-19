@@ -162,10 +162,10 @@ nav #toggle, nav label {
   .grid-container img {
     width: 240px;
     border: 1px 1px 20px black;
-    border-radius: 2%; }
+    border-radius: 2%;
+    transition: transform 3000ms ease; }
     .grid-container img:hover {
-      transform: scale(1.6);
-      transition: transform 3000ms; }
+      transform: scale(1.2); }
 
 /*main de nosotros*/
 .cuerpo-nosotros {
