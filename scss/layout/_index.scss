@@ -1,12 +1,16 @@
 /*main del index*/
 
+.carousel-inner img{
+    filter: brightness(.5);
+}
 .carousel-caption{
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   h1{
-    @include h1(none, 4.5rem);
+    @include h1(center, 4.5rem);
+    color: white;
   }
 }
 

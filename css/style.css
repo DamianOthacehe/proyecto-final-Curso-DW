@@ -46,6 +46,9 @@ nav #toggle, nav label {
   display: none; }
 
 /*main del index*/
+.carousel-inner img {
+  filter: brightness(0.5); }
+
 .carousel-caption {
   position: absolute;
   top: 0;
@@ -54,10 +57,11 @@ nav #toggle, nav label {
   .carousel-caption h1 {
     padding: 2%;
     display: flex;
-    justify-content: none;
+    justify-content: center;
     font-size: 4.5rem;
     color: #37587E;
-    text-shadow: 1px 1px 4px whitesmoke; }
+    text-shadow: 1px 1px 4px whitesmoke;
+    color: white; }
 
 .main-container {
   margin: 3% 0;
