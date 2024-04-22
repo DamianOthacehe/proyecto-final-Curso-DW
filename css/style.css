@@ -61,7 +61,32 @@ nav #toggle, nav label {
     font-size: 4.5rem;
     color: #37587E;
     text-shadow: 1px 1px 4px whitesmoke;
-    color: white; }
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); }
+
+.carousel-caption {
+  -webkit-animation: tracking-in-contract 2s cubic-bezier(0.215, 0.61, 0.355, 1) 1s both;
+  animation: tracking-in-contract 2s cubic-bezier(0.215, 0.61, 0.355, 1) 1s both; }
+
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    letter-spacing: normal;
+    opacity: 1; } }
+
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    letter-spacing: normal;
+    opacity: 1; } }
 
 .main-container {
   margin: 3% 0;
@@ -148,17 +173,23 @@ nav #toggle, nav label {
     color: white;
     text-shadow: 1px 1px 4px black; }
   .galeria p {
-    padding: 0 10% 3%;
+    padding: 0 10%;
     font-size: 1rem;
     text-align: center;
     color: white;
     font-weight: 400;
     text-shadow: 0 0 4px #37587E; }
 
+.modelo {
+  padding: 3rem;
+  color: #a8dff9;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 4px black; }
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1;
   justify-items: center;
   align-content: none;
   grid-template-areas: none;
@@ -170,6 +201,21 @@ nav #toggle, nav label {
     transition: transform 3000ms ease; }
     .grid-container img:hover {
       transform: scale(1.2); }
+
+.carrito {
+  font-family: "Poppins", sans-serif;
+  text-align: center; }
+  .carrito p {
+    color: black;
+    text-shadow: none; }
+  .carrito button {
+    width: 200px;
+    background-color: #37587E;
+    color: #a8dff9;
+    border: none;
+    transition: transform 1000ms ease; }
+    .carrito button:hover {
+      color: #ECB159; }
 
 /*main de nosotros*/
 .cuerpo-nosotros {
@@ -206,6 +252,17 @@ nav #toggle, nav label {
     .nosotros div p {
       padding: 0 0 3% 0;
       font-size: 1rem; }
+
+.locales h2 {
+  padding-left: 2rem;
+  font-size: 2.5rem;
+  color: #37587E; }
+
+.locales div {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
 
 /*main de contacto*/
 .cuerpo-contacto {
@@ -271,15 +328,24 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center; }
+  footer h3 {
+    margin: 0%;
+    font-size: 1.7rem;
+    color: black; }
+  footer a img {
+    margin: 0 5px;
+    width: 30px; }
 
-footer h3 {
-  margin: 0%;
-  font-size: 1.7rem;
-  color: black; }
-
-footer a img {
-  margin: 0 5px;
-  width: 30px; }
+.copyright p {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: black; }
+  .copyright p a {
+    color: #a8dff9;
+    text-decoration: none;
+    list-style: none; }
 
 /* MEDIA QUERIES */
 /* TABLET */

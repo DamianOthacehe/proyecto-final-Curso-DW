@@ -1,43 +1,76 @@
 /*main del index*/
 
 .carousel-inner img{
-    filter: brightness(.5);
+  filter: brightness(.5);
 }
 .carousel-caption{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  h1{
-    @include h1(center, 4.5rem);
-    color: white;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+h1{
+  @include h1(center, 4.5rem);
+  color: white;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+}
+
+.carousel-caption{
+  -webkit-animation: tracking-in-contract 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+	        animation: tracking-in-contract 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+}
+
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
   }
 }
 
 .main-container {
-  margin: 3% 0;
-  padding: 3%;
-  background-color: $bg-main;
-  display: flex;
-  justify-content: space-around;
+margin: 3% 0;
+padding: 3%;
+background-color: $bg-main;
+display: flex;
+justify-content: space-around;
 }
 
 .image-container {
-  @include flex(column, none, center);
-  img {
-    width: 300px;
-    border-radius: $b-rad;
-    box-shadow: $border;
-  }
+@include flex(column, none, center);
+img {
+  width: 300px;
+  border-radius: $b-rad;
+  box-shadow: $border;
+}
 }
 
 .text-container {
-  @extend .image-container;
-  padding-top: 3%;
-  h2{
-    color: $font-h-main;
-  }
-  p{
-    font-size: $p;
-  }
+@extend .image-container;
+padding-top: 3%;
+h2{
+  color: $font-h-main;
+}
+p{
+  font-size: $p;
+}
 }

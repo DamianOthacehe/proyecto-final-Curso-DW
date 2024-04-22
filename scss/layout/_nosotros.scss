@@ -34,3 +34,17 @@
     }
   }
 }
+
+.locales{
+  h2 {
+    padding-left: 2rem;
+    font-size: $h2;
+    color: $font-h-main;
+  }
+  div{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

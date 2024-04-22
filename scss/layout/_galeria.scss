@@ -8,18 +8,25 @@
   h1 {
     @include h1(center, 3rem);
     color: white;
-    text-shadow: 1px 1px 4px black  }
+    text-shadow: 1px 1px 4px black;}
   p{
-    padding: 0 10% 3%;
+    padding: 0 10%;
     font-size: $p;
     text-align: center;
     color: white;
     font-weight: 400;
-    text-shadow: 0 0 4px #37587E;
+    text-shadow: 0 0 4px #37587E;}
   }
-}
+
+
+.modelo{
+  padding: 3rem;
+  color: $font-h-header;
+  font-size: $h2;
+  text-shadow: 1px 1px 4px black;}
+
 .grid-container {
-  @include grid (repeat(4, 1fr), repeat(3, 1fr), center, none, none);
+  @include grid (repeat(4, 1fr), 1, center, none, none);
   row-gap: 50px;
   img{
     width: 240px;
@@ -28,6 +35,24 @@
     transition: transform 3000ms ease;
     &:hover{
       transform: scale(1.2);
+    }
+  }
+}
+
+.carrito{
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  p{
+    color: black;
+    text-shadow: none;
+  }
+  button{width: 200px;
+    background-color:#37587E;
+    color: #a8dff9;
+    border: none;
+    transition: transform 1000ms ease;
+    &:hover{
+      color: $hover;
     }
   }
 }
