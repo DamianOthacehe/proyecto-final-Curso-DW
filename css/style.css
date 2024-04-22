@@ -90,10 +90,20 @@ nav #toggle, nav label {
 
 .main-container {
   margin: 3% 0;
+  background-color: #a8dff9; }
+
+.portada, .portada2 {
   padding: 3%;
-  background-color: #a8dff9;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-evenly;
+  align-items: center; }
+  .portada p, .portada2 p {
+    width: 20%; }
+
+.portada2 {
+  flex-direction: row-reverse; }
+  .portada2 p {
+    text-align: end; }
 
 .image-container, .text-container {
   display: flex;
@@ -110,7 +120,8 @@ nav #toggle, nav label {
   .text-container h2 {
     color: #37587E; }
   .text-container p {
-    font-size: 1rem; }
+    font-size: 1rem;
+    width: 100%; }
 
 /*main de nuestras tablas*/
 .cuerpoTablas {
@@ -213,6 +224,7 @@ nav #toggle, nav label {
     background-color: #37587E;
     color: #a8dff9;
     border: none;
+    border-radius: 10px;
     transition: transform 1000ms ease; }
     .carrito button:hover {
       color: #ECB159; }
@@ -253,9 +265,8 @@ nav #toggle, nav label {
       padding: 0 0 3% 0;
       font-size: 1rem; }
 
-.locales h2 {
+.locales h3 {
   padding-left: 2rem;
-  font-size: 2.5rem;
   color: #37587E; }
 
 .locales div {
@@ -277,45 +288,68 @@ nav #toggle, nav label {
     justify-content: center;
     font-size: 3rem;
     color: #37587E;
-    text-shadow: 1px 1px 4px whitesmoke; }
+    text-shadow: 1px 1px 4px whitesmoke;
+    color: white;
+    text-shadow: 1px 1px 4px black; }
 
 /*formulario*/
-form {
+.contacto {
+  padding: 3rem;
   display: flex;
-  justify-content: center;
-  padding-bottom: 3%; }
-  form fieldset {
-    width: 40%;
-    padding: 3%;
-    display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .contacto div p {
+    width: 400px;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+    font-weight: bold;
+    text-align: end; }
+
+fieldset {
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.308);
+  border: none; }
+  fieldset div {
+    padding: 2%;
+    font-size: 1rem;
+    color: white;
+    text-shadow: 1px 1px 4px black; }
+    fieldset div label {
+      display: flex; }
+    fieldset div input {
+      width: 400px;
+      height: 32px; }
+    fieldset div select {
+      width: 400px;
+      height: 32px; }
+    fieldset div textarea {
+      width: 400px;
+      height: 160px; }
+    fieldset div .submit {
+      width: 400px;
+      height: 32px;
+      background-color: #a8dff9;
+      border: #a8dff9;
+      font-family: 'Irish Grover', system-ui;
+      font-size: 1rem; }
+
+.bottom {
+  padding: 3rem;
+  display: flex;
+  justify-content: space-around; }
+  .bottom div {
+    width: 30%;
     flex-direction: column;
-    justify-content: none;
-    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 4px black;
     background-color: rgba(0, 0, 0, 0.308);
-    border: none; }
-    form fieldset div {
-      padding: 2%;
-      font-size: 1rem;
-      color: white;
-      text-shadow: 1px 1px 4px black; }
-      form fieldset div label {
-        display: flex; }
-      form fieldset div input {
-        width: 400px;
-        height: 32px; }
-      form fieldset div select {
-        width: 400px;
-        height: 32px; }
-      form fieldset div textarea {
-        width: 400px;
-        height: 160px; }
-      form fieldset div .submit {
-        width: 400px;
-        height: 32px;
-        background-color: #a8dff9;
-        border: #a8dff9;
-        font-family: 'Irish Grover', system-ui;
-        font-size: 1rem; }
+    border: 3px solid; }
 
 /*footer*/
 footer {

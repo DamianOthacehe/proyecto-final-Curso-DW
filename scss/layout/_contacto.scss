@@ -9,6 +9,8 @@
   background-position: center; 
   h1{
     @include h1(center, 3rem);
+    color: white;
+    text-shadow: 1px 1px 4px black;
   }
 }
 
@@ -16,14 +18,23 @@
 
 /*formulario*/
 
-
-form {
+.contacto{
+  padding: 3rem;
   display: flex;
-  justify-content: center;
-  padding-bottom: 3%; 
+  justify-content: space-around;
+  align-items: center;
+  div p{
+    width: 400px;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+    font-weight: bold;
+    text-align: end;
+  }
+}
+
   fieldset {
-    width: 40%;
-    padding: 3%;
+    width: 100%;
+    padding: 3rem;
     @include flex(column, none, center);
     background-color: rgba(0, 0, 0, 0.308);
     border: none;
@@ -56,5 +67,20 @@ form {
         font-size: $p;
       }
     }
+  }
+
+
+.bottom{
+  padding: 3rem;
+  display: flex;
+  justify-content:space-around;
+  div{
+    width: 30%;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+    background-color: rgba(0, 0, 0, 0.308);
+    border: 3px solid;
   }
 }
