@@ -98,7 +98,7 @@ nav #toggle, nav label {
   justify-content: space-evenly;
   align-items: center; }
   .portada p, .portada2 p {
-    width: 20%;
+    width: 30%;
     font-weight: 500; }
 
 .portada2 {
@@ -271,6 +271,7 @@ nav #toggle, nav label {
   .locales div {
     padding: 2rem 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center; }
 
@@ -394,6 +395,10 @@ footer {
 /* TABLET */
 @media (max-width: 1023px) {
   /* index*/
+  .portada p, .portada2 p {
+    width: 35%; }
+  .text-container p {
+    width: 100%; }
   /* tablas*/
   .cards {
     justify-content: space-between; }
@@ -512,8 +517,33 @@ footer {
   .cuerpo-contacto h1 {
     padding: 1%;
     font-size: 2.5rem; }
+  .contacto {
+    flex-direction: column; }
+  fieldset div label {
+    width: 320px; }
+  fieldset div input {
+    width: 320px; }
+  fieldset div select {
+    width: 320px; }
+  fieldset div textarea {
+    width: 320px; }
+  fieldset div iframe {
+    width: 300px;
+    height: 70px; }
+  fieldset div .submit {
+    width: 320px; }
+  .map p {
+    width: 320px; }
+  .map iframe {
+    width: 320px; }
   form fieldset {
-    width: 100%; }
+    margin-bottom: 2rem; }
+  .bottom {
+    flex-direction: column;
+    padding-top: 0%; }
+    .bottom div {
+      margin-bottom: 2rem;
+      width: 100%; }
   /* footer */
   footer {
     height: 5rem; }
@@ -523,6 +553,8 @@ footer {
       width: 25px; } }
 
 @media (max-width: 675px) {
+  .image-container img, .text-container img {
+    width: 220px; }
   /* tablas */
   .cuerpoTablas h2 {
     font-size: 1.3rem; }
@@ -537,12 +569,7 @@ footer {
     grid-template-rows: repeat(2, 1fr);
     row-gap: 32px; }
     .grid-container .carrito {
-      width: 180px; }
-  /* contacto */
-  .cuerpo-contacto {
-    height: 85vh; }
-  form fieldset {
-    width: 75%; } }
+      width: 180px; } }
 
 @media (max-width: 576px) {
   /* header */
@@ -558,8 +585,12 @@ footer {
     font-size: 2.2rem; }
   .main-container {
     flex-direction: column; }
-  .image-container, .text-container {
-    padding: 3%; }
+  .portada, .portada2 {
+    flex-direction: column; }
+    .portada p, .portada2 p {
+      width: 75%;
+      text-align: center;
+      padding-bottom: 1rem; }
   /* tablas */
   .cuerpoTablas h1 {
     font-size: 2rem; }
@@ -586,27 +617,32 @@ footer {
       .nosotros div h2 {
         font-size: 1.4rem; }
   /* contacto */
-  .cuerpo-contacto {
-    height: 88vh; }
-    .cuerpo-contacto h1 {
-      font-size: 2rem; }
-  form fieldset {
-    width: 75%; }
-    form fieldset div {
-      font-size: 1.3rem; }
-      form fieldset div input {
-        width: 300px;
-        height: 30px; }
-      form fieldset div select {
-        width: 300px;
-        height: 30px; }
-      form fieldset div textarea {
-        width: 300px;
-        height: 100px; }
-      form fieldset div .submit {
-        width: 300px;
-        height: 30px;
-        font-size: 1.3rem; }
+  .cuerpo-contacto h1 {
+    font-size: 2rem; }
+  form fieldset div {
+    width: 280px;
+    font-size: 1rem; }
+    form fieldset div label {
+      width: 280px; }
+    form fieldset div input {
+      width: 280px;
+      height: 28px; }
+    form fieldset div select {
+      width: 280px;
+      height: 28px; }
+    form fieldset div textarea {
+      width: 280px;
+      height: 80px; }
+    form fieldset div iframe {
+      display: none; }
+    form fieldset div .submit {
+      width: 280px;
+      height: 28px;
+      font-size: 1rem; }
+  .map p {
+    width: 280px; }
+  .map iframe {
+    width: 280px; }
   /* footer */
   footer {
     height: 4rem; }
@@ -632,9 +668,28 @@ footer {
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr); }
-  /* contacto */
-  form fieldset {
-    width: 85%; }
+  form fieldset div {
+    width: 240px;
+    font-size: 0.8rem; }
+    form fieldset div label {
+      width: 240px; }
+    form fieldset div input {
+      width: 240px;
+      height: 24px; }
+    form fieldset div select {
+      width: 240px;
+      height: 24px; }
+    form fieldset div textarea {
+      width: 240px;
+      height: 70px; }
+    form fieldset div .submit {
+      width: 240px;
+      height: 24px;
+      font-size: 0.8rem; }
+  .map p {
+    width: 240px; }
+  .map iframe {
+    width: 240px; }
   /* footer */
   footer {
     height: 3.5rem; }
@@ -687,23 +742,22 @@ footer {
   /* contacto */
   .cuerpo-contacto h1 {
     font-size: 1.5rem; }
-  form fieldset {
-    width: 75%; }
-    form fieldset div {
-      font-size: 1rem; }
-      form fieldset div input {
-        width: 200px;
-        height: 20px; }
-      form fieldset div select {
-        width: 200px;
-        height: 20px; }
-      form fieldset div textarea {
-        width: 200px;
-        height: 80px; }
-      form fieldset div .submit {
-        width: 200px;
-        height: 20px;
-        font-size: 1rem; }
+  form fieldset div {
+    width: 200px; }
+    form fieldset div label {
+      width: 200px; }
+    form fieldset div input {
+      width: 200px;
+      height: 20px; }
+    form fieldset div select {
+      width: 200px;
+      height: 20px; }
+    form fieldset div textarea {
+      width: 200px;
+      height: 80px; }
+    form fieldset div .submit {
+      width: 200px;
+      height: 20px; }
   /* footer */
   footer {
     height: 3rem; }

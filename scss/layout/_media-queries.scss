@@ -6,7 +6,12 @@
 
 @media (max-width: 1023px) {
   /* index*/
-  
+  .portada p{
+    width: 35%;
+  }
+  .text-container p{
+    width: 100%;
+  }
   /* tablas*/
   .cards{
     justify-content: space-between;
@@ -173,8 +178,31 @@
     padding: 1%;
     font-size: 2.5rem;
   }
+  .contacto{
+    flex-direction: column;
+  }
+  fieldset div{
+    label{width: 320px;}
+    input{width: 320px;}
+    select{width: 320px;}
+    textarea{width: 320px;}
+    iframe{width: 300px; height: 70px;}
+    .submit{width: 320px;}
+  }
+  .map{
+    p{width: 320px;}
+    iframe{width: 320px;}
+  }
   form fieldset {
-    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .bottom{
+    flex-direction: column;
+    padding-top: 0%;
+    div{
+      margin-bottom: 2rem;
+      width: 100%;
+    }
   }
   /* footer */
   footer {
@@ -191,6 +219,10 @@
 
 
 @media (max-width: 675px) {
+  // index
+  .image-container img {
+    width: 220px;
+  }
   /* tablas */
   .cuerpoTablas{
     h2{
@@ -212,13 +244,6 @@
     .carrito{
     width: 180px;
     }
-  }
-  /* contacto */
-  .cuerpo-contacto {
-    height: 85vh;
-  }
-  form fieldset {
-    width: 75%;
   }
 }
 
@@ -243,8 +268,13 @@
   .main-container {
     flex-direction: column;
   }
-  .image-container {
-    padding: 3%;
+  .portada{
+    flex-direction: column;
+    p{
+      width: 75%;
+      text-align: center;
+      padding-bottom: 1rem;
+    }
   }
   /* tablas */
   .cuerpoTablas {
@@ -287,33 +317,42 @@
   }
   /* contacto */
   .cuerpo-contacto{
-    height: 88vh;
     h1 {
       font-size: 2rem;
     }
   }
   form fieldset {
-    width: 75%;
     div {
-      font-size: 1.3rem;
+      width: 280px;
+      font-size: 1rem;
+      label{
+        width: 280px;
+      }
       input {
-        width: 300px;
-        height: 30px;
+        width: 280px;
+        height: 28px;
       }
       select {
-        width: 300px;
-        height: 30px;
+        width: 280px;
+        height: 28px;
       }
       textarea {
-        width: 300px;
-        height: 100px;
+        width: 280px;
+        height: 80px;
+      }
+      iframe{
+        display: none;
       }
       .submit {
-        width: 300px;
-        height: 30px;
-        font-size: 1.3rem;
+        width: 280px;
+        height: 28px;
+        font-size: 1rem;
       }
     }
+  }
+  .map{
+    p{width: 280px;}
+    iframe{width: 280px;}
   }
   /* footer */
   footer {
@@ -353,9 +392,35 @@
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
-  /* contacto */
   form fieldset {
-    width: 85%;
+    div {
+      width: 240px;
+      font-size: 0.8rem;
+      label{
+        width: 240px;
+      }
+      input {
+        width: 240px;
+        height: 24px;
+      }
+      select {
+        width: 240px;
+        height: 24px;
+      }
+      textarea {
+        width: 240px;
+        height: 70px;
+      }
+      .submit {
+        width: 240px;
+        height: 24px;
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .map{
+    p{width: 240px;}
+    iframe{width: 240px;}
   }
   /* footer */
   footer {
@@ -441,9 +506,11 @@
     font-size: 1.5rem;
   }
   form fieldset {
-    width: 75%;
     div {
-      font-size: 1rem;
+      width: 200px;
+      label{
+        width: 200px;
+      }
       input {
         width: 200px;
         height: 20px;
@@ -459,7 +526,6 @@
       .submit {
         width: 200px;
         height: 20px;
-        font-size: 1rem
       }
     }
   }
