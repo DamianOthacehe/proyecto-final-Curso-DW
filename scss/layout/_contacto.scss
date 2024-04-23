@@ -3,6 +3,7 @@
 
 .cuerpo-contacto {
   margin-bottom: 3%;
+  padding: 0 3%;
   background-image: url(../assets/img/contacto-fondo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,28 +19,21 @@
 
 /*formulario*/
 
-.contacto{
+  .contacto{
   padding: 3rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  div p{
-    width: 400px;
-    color: white;
-    text-shadow: 1px 1px 4px black;
-    font-weight: bold;
-    text-align: end;
   }
-}
 
   fieldset {
     width: 100%;
-    padding: 3rem;
+    padding: 2rem;
     @include flex(column, none, center);
-    background-color: rgba(0, 0, 0, 0.308);
+    background-color: rgba(0, 0, 0, 0.459);
     border: none;
     div {
-      padding: 2%;
+      padding: 2% 0;
       font-size: $p;
       color: white;
       text-shadow: 1px 1px 4px black;
@@ -47,19 +41,23 @@
         display: flex;
       }
       input {
-        width: 400px;
+        width: 360px;
         height: 32px;
       }
       select {
-        width: 400px;
+        width: 360px;
         height: 32px;
       }
       textarea {
-        width: 400px;
+        width: 360px;
         height: 160px;
       }
+      iframe{
+        width: 304px;
+        height: 74px;
+      }
       .submit {
-        width: 400px;
+        width: 360px;
         height: 32px;
         background-color: #a8dff9;
         border: #a8dff9;
@@ -69,6 +67,18 @@
     }
   }
 
+.map{
+  p{
+    width: 360px;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+    font-weight: bold;
+    text-align: end;
+  }
+  iframe{
+    width: 360px;
+  }
+}
 
 .bottom{
   padding: 3rem;
@@ -80,7 +90,10 @@
     text-align: center;
     color: white;
     text-shadow: 1px 1px 4px black;
-    background-color: rgba(0, 0, 0, 0.308);
+    background-color: rgba(0, 0, 0, 0.459);
     border: 3px solid;
+    p{
+      font-weight: bold;
+    }
   }
 }

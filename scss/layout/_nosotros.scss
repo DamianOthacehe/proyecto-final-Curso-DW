@@ -36,14 +36,14 @@
 }
 
 .locales{
+  padding: 3rem;
   h3 {
-    padding-left: 2rem;
     color: $font-h-main;
   }
   div{
-    padding: 2rem;
+    padding: 2rem 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 }

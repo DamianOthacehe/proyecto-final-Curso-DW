@@ -98,7 +98,8 @@ nav #toggle, nav label {
   justify-content: space-evenly;
   align-items: center; }
   .portada p, .portada2 p {
-    width: 20%; }
+    width: 20%;
+    font-weight: 500; }
 
 .portada2 {
   flex-direction: row-reverse; }
@@ -145,29 +146,28 @@ nav #toggle, nav label {
   padding: 5%;
   display: flex;
   justify-content: space-around; }
-
-.tablas {
-  width: 250px;
-  border-radius: 2%;
-  box-shadow: 1px 1px 20px black;
-  background-color: white;
-  overflow: hidden; }
-  .tablas img {
-    width: 100%;
-    object-fit: cover;
-    filter: sepia(); }
-    .tablas img:hover {
-      filter: none;
-      transition: 1500ms; }
-  .tablas h2 {
-    padding: 2%;
-    text-align: center;
-    font-size: 2.5rem;
-    color: #37587E; }
-  .tablas p {
-    padding: 5%;
-    font-size: 1rem;
-    text-align: center; }
+  .cards .tablas {
+    width: 250px;
+    border-radius: 2%;
+    box-shadow: 1px 1px 20px black;
+    background-color: white;
+    overflow: hidden; }
+    .cards .tablas img {
+      width: 100%;
+      object-fit: cover;
+      filter: sepia(); }
+      .cards .tablas img:hover {
+        filter: none;
+        transition: 1500ms; }
+    .cards .tablas h2 {
+      padding: 2%;
+      text-align: center;
+      font-size: 2.5rem;
+      color: #37587E; }
+    .cards .tablas p {
+      padding: 5%;
+      font-size: 1rem;
+      text-align: center; }
 
 /*main de galeria*/
 .galeria {
@@ -205,29 +205,28 @@ nav #toggle, nav label {
   align-content: none;
   grid-template-areas: none;
   row-gap: 50px; }
-  .grid-container img {
+  .grid-container .carrito {
     width: 240px;
-    border: 1px 1px 20px black;
-    border-radius: 2%;
-    transition: transform 3000ms ease; }
-    .grid-container img:hover {
-      transform: scale(1.2); }
-
-.carrito {
-  font-family: "Poppins", sans-serif;
-  text-align: center; }
-  .carrito p {
-    color: black;
-    text-shadow: none; }
-  .carrito button {
-    width: 200px;
-    background-color: #37587E;
-    color: #a8dff9;
-    border: none;
-    border-radius: 10px;
-    transition: transform 1000ms ease; }
-    .carrito button:hover {
-      color: #ECB159; }
+    font-family: "Poppins", sans-serif;
+    text-align: center; }
+    .grid-container .carrito img {
+      width: 100%;
+      border-radius: 2%;
+      transition: transform 3000ms ease; }
+      .grid-container .carrito img:hover {
+        transform: scale(1.2); }
+    .grid-container .carrito p {
+      color: black;
+      text-shadow: none; }
+    .grid-container .carrito button {
+      width: 100%;
+      background-color: #37587E;
+      color: #a8dff9;
+      border: none;
+      border-radius: 10px;
+      transition: transform 1000ms ease; }
+      .grid-container .carrito button:hover {
+        color: #ECB159; }
 
 /*main de nosotros*/
 .cuerpo-nosotros {
@@ -265,19 +264,20 @@ nav #toggle, nav label {
       padding: 0 0 3% 0;
       font-size: 1rem; }
 
-.locales h3 {
-  padding-left: 2rem;
-  color: #37587E; }
-
-.locales div {
-  padding: 2rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
+.locales {
+  padding: 3rem; }
+  .locales h3 {
+    color: #37587E; }
+  .locales div {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
 
 /*main de contacto*/
 .cuerpo-contacto {
   margin-bottom: 3%;
+  padding: 0 3%;
   background-image: url(../assets/img/contacto-fondo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -298,45 +298,52 @@ nav #toggle, nav label {
   display: flex;
   justify-content: space-around;
   align-items: center; }
-  .contacto div p {
-    width: 400px;
-    color: white;
-    text-shadow: 1px 1px 4px black;
-    font-weight: bold;
-    text-align: end; }
 
 fieldset {
   width: 100%;
-  padding: 3rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: none;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.308);
+  background-color: rgba(0, 0, 0, 0.459);
   border: none; }
   fieldset div {
-    padding: 2%;
+    padding: 2% 0;
     font-size: 1rem;
     color: white;
     text-shadow: 1px 1px 4px black; }
     fieldset div label {
       display: flex; }
     fieldset div input {
-      width: 400px;
+      width: 360px;
       height: 32px; }
     fieldset div select {
-      width: 400px;
+      width: 360px;
       height: 32px; }
     fieldset div textarea {
-      width: 400px;
+      width: 360px;
       height: 160px; }
+    fieldset div iframe {
+      width: 304px;
+      height: 74px; }
     fieldset div .submit {
-      width: 400px;
+      width: 360px;
       height: 32px;
       background-color: #a8dff9;
       border: #a8dff9;
       font-family: 'Irish Grover', system-ui;
       font-size: 1rem; }
+
+.map p {
+  width: 360px;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+  font-weight: bold;
+  text-align: end; }
+
+.map iframe {
+  width: 360px; }
 
 .bottom {
   padding: 3rem;
@@ -348,8 +355,10 @@ fieldset {
     text-align: center;
     color: white;
     text-shadow: 1px 1px 4px black;
-    background-color: rgba(0, 0, 0, 0.308);
+    background-color: rgba(0, 0, 0, 0.459);
     border: 3px solid; }
+    .bottom div p {
+      font-weight: bold; }
 
 /*footer*/
 footer {
@@ -384,27 +393,51 @@ footer {
 /* MEDIA QUERIES */
 /* TABLET */
 @media (max-width: 1023px) {
-  .grid-container {
-    row-gap: 30px; }
-    .grid-container img {
-      width: 200px; }
+  /* index*/
+  /* tablas*/
   .cards {
     justify-content: space-between; }
-  /* contacto */
-  form fieldset {
-    width: 50%; } }
+  /* galeria*/
+  .grid-container {
+    row-gap: 30px; }
+    .grid-container .carrito {
+      width: 200px; }
+  /*contacto*/
+  fieldset div label {
+    width: 280px; }
+  fieldset div input {
+    width: 280px; }
+  fieldset div select {
+    width: 280px; }
+  fieldset div textarea {
+    width: 280px; }
+  fieldset div iframe {
+    width: 280px;
+    height: 67.19px; }
+  fieldset div .submit {
+    width: 280px; }
+  .map p {
+    width: 280px; }
+  .map iframe {
+    width: 280px; }
+  .bottom div h3 {
+    font-size: 1.3rem; }
+  .bottom div p {
+    font-weight: normal; } }
 
 @media (max-width: 900px) {
   /* galeria */
   .grid-container {
     row-gap: 20px; }
-    .grid-container img {
-      width: 180px; }
-  .tablas {
+    .grid-container .carrito {
+      width: 160px; }
+      .grid-container .carrito h3 {
+        font-size: 1rem; }
+  .cards .tablas {
     width: 210px; }
   /* contacto */
   form fieldset {
-    width: 60%; } }
+    width: 100%; } }
 
 @media (max-width: 768px) {
   /* header */
@@ -447,7 +480,7 @@ footer {
     font-size: 1.5rem; }
   .cuerpoTablas p {
     font-size: 0.8rem; }
-  .tablas {
+  .cards .tablas {
     width: 190px; }
   h2 {
     font-size: 2rem; }
@@ -457,7 +490,9 @@ footer {
   .galeria h1 {
     padding: 1%;
     font-size: 2.5rem; }
-  .grid-container img {
+  .modelo {
+    font-size: 1.7rem; }
+  .grid-container .carrito {
     width: 150px; }
   /* nosotros */
   .cuerpo-nosotros div h1 {
@@ -478,7 +513,7 @@ footer {
     padding: 1%;
     font-size: 2.5rem; }
   form fieldset {
-    width: 65%; }
+    width: 100%; }
   /* footer */
   footer {
     height: 5rem; }
@@ -491,7 +526,7 @@ footer {
   /* tablas */
   .cuerpoTablas h2 {
     font-size: 1.3rem; }
-  .tablas {
+  .cards .tablas {
     width: 165px; }
   /* galeria */
   .galeria h1 {
@@ -499,9 +534,9 @@ footer {
   .grid-container {
     padding: 3%;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     row-gap: 32px; }
-    .grid-container img {
+    .grid-container .carrito {
       width: 180px; }
   /* contacto */
   .cuerpo-contacto {
@@ -531,13 +566,13 @@ footer {
   .cards {
     flex-direction: column;
     align-items: center; }
-  .tablas {
-    margin: 5%;
-    width: 220px; }
-    .tablas h2 {
-      font-size: 2rem; }
-    .tablas p {
-      font-size: 0.8rem; }
+    .cards .tablas {
+      margin: 5%;
+      width: 220px; }
+      .cards .tablas h2 {
+        font-size: 2rem; }
+      .cards .tablas p {
+        font-size: 0.8rem; }
   /* nosotros */
   .cuerpo-nosotros div h1 {
     font-size: 2rem; }
@@ -589,14 +624,14 @@ footer {
     font-size: 1.1rem; }
   .cuerpoTablas p {
     font-size: 0.7rem; }
-  .tablas {
+  .cards .tablas {
     width: 190px; }
   /* galeria */
   .galeria h1 {
     font-size: 1.5rem; }
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(12, 1fr); }
+    grid-template-rows: repeat(4, 1fr); }
   /* contacto */
   form fieldset {
     width: 85%; }
