@@ -29,7 +29,7 @@
       color: $font-h-main;
     }
     p {
-      padding:0 0 3% 0;
+      padding-bottom: 3%;
       font-size: $p;
     }
   }
@@ -42,9 +42,7 @@
   }
   div{
     padding: 2rem 0;
-    display: flex;
+    @include flex(row, space-between, center);
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
   }
 }

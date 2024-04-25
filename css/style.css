@@ -95,6 +95,7 @@ nav #toggle, nav label {
 .portada, .portada2 {
   padding: 3%;
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center; }
   .portada p, .portada2 p {
@@ -261,7 +262,7 @@ nav #toggle, nav label {
       font-size: 2.5rem;
       color: #37587E; }
     .nosotros div p {
-      padding: 0 0 3% 0;
+      padding-bottom: 3%;
       font-size: 1rem; }
 
 .locales {
@@ -271,9 +272,10 @@ nav #toggle, nav label {
   .locales div {
     padding: 2rem 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: wrap; }
 
 /*main de contacto*/
 .cuerpo-contacto {
@@ -297,6 +299,7 @@ nav #toggle, nav label {
 .contacto {
   padding: 3rem;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center; }
 
@@ -431,6 +434,8 @@ footer {
     font-weight: normal; } }
 
 @media (max-width: 900px) {
+  .carousel-caption h1 {
+    font-size: 3.8rem; }
   /* galeria */
   .grid-container {
     row-gap: 20px; }
@@ -515,7 +520,6 @@ footer {
       font-size: 0.8rem; }
   /* contacto */
   .cuerpo-contacto h1 {
-    padding: 1%;
     font-size: 2.5rem; }
   .contacto {
     flex-direction: column; }
@@ -581,7 +585,6 @@ footer {
     font-size: 1.5rem; }
   /* index */
   .carousel-caption h1 {
-    padding-left: 1%;
     font-size: 2.2rem; }
   .main-container {
     flex-direction: column; }

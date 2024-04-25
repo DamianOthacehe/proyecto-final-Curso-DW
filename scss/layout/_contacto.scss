@@ -21,9 +21,7 @@
 
   .contacto{
   padding: 3rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  @include flex(row, space-around, center);
   }
 
   fieldset {
